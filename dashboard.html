@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home.html</title>
+    <script>
+        function logout()
+        {
+            localStorage.clear();
+            window.location='login.html';
+        }
+        function check()
+        {
+            var islogin = localStorage.getItem("islogin");
+            if(!islogin)
+            {
+                window.location='login.html';
+            }
+        }
+    </script>
+</head>
+<body onload="check();">
+<button type="button" onclick="logout();">logout</button>
+</body>
+</html>

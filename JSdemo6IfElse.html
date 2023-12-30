@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+    <script>
+        function one()
+        {
+            var percentage = document.getElementById("per").value;
+            
+            
+            if(percentage>=70 && percentage<=100)
+            {
+                
+                document.getElementById("cat").innerHTML="Dsitinction";
+            }
+           else if(percentage>=60 && percentage<70)
+            {
+                
+                document.getElementById("cat").innerHTML="first";
+            }
+           else if(percentage>=50 && percentage<=60)
+            {
+                
+                document.getElementById("cat").innerHTM="second";
+            }
+           else if(percentage>=40 && percentage<50)
+            {
+                
+                document.getElementById("cat").innerHTML="pass";
+            }
+          else if(percentage<40 && percentage>=0)
+            {
+                document.getElementById("cat").innerHTML="fail";
+            } 
+
+          else if(percentage<0 || percentage>100)
+            {    
+                document.getElementById("cat").innerHTML="invalid";
+            }   
+
+        }
+    </script>
+</head>
+<body>
+    <p>Student Percentage=
+        <input type="text" id="per">
+    </p>
+    <input type="button" value="button" onclick="one()">
+
+
+    <table>
+        <tr>   
+           <th>Catagory</th>
+           <td id="cat"></td>
+        </tr>   
+       </table>
+</body>
+</html>

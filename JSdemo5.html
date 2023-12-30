@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td
+        {
+        border:1px solid;
+        border-collapse:collapse;
+        }
+    </style>
+    <script>
+    function result()
+    {
+        var rollno =document.getElementById("rolno").value;
+        var nam = document.getElementById("name").value;
+        var sb1 = document.getElementById("subject1").value;
+        var sb2 = document.getElementById("subject2").value;
+        var sb3 = document.getElementById("subject3").value;
+        var total= parseInt(sb1)+parseInt(sb2)+parseInt(sb3);
+        var percentage = parseInt(total)/3;
+
+
+        document.getElementById("RN").innerHTML=rollno;
+        document.getElementById("NAME").innerHTML=nam;
+        document.getElementById("SUB1").innerHTML=sb1;
+        document.getElementById("SUB2").innerHTML=sb2;
+        document.getElementById("SUB3").innerHTML=sb3;
+        document.getElementById("TOTAL").innerHTML=total;
+        document.getElementById("PER").innerHTML=percentage;
+    }
+    </script>
+</head>
+<body>
+    <p>Roll No=
+        <input type="text" id="rolno">
+    </p>
+    <p>Name=
+        <input type="text" id="name">
+    </p>
+    <p>Sub 1=
+        <input type="text" id="subject1">
+    </p>
+    <p>Sub 2=
+        <input type="text" id="subject2">
+    </p>
+    <p>Sub 3=
+        <input type="text" id="subject3">
+    </p>
+
+    <button type="button"onclick="result()">result</button>
+
+
+
+
+    <table border="1" cellpadding="17"> 
+        <tr>
+            <th>Roll No</th>
+            <td id="RN" ></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td id="NAME"></td>
+        </tr>
+        <tr>
+            <th>Sub 1</th>
+            <td id="SUB1"></td>
+        </tr>
+        <tr>
+            <th>Sub 2</th>
+            <td id="SUB2"></td>
+        </tr>
+        <tr>
+            <th>Sub 3</th>
+            <td id="SUB3"></td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td id="TOTAL"></td>
+        </tr>
+        <tr>
+            <th>Percentage</th>
+            <td id="PER"></td>
+        </tr>
+    </table>
+
+</body>
+</html>

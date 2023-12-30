@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function one()
+        {
+            var name = document.getElementById("txtname").value;
+            var email = document.getElementById("txtemail").value;
+            var contact = document.getElementById("txtmobile").value;
+
+            document.getElementById("opname").innerHTML = "Name : "+name;
+            document.getElementById("opemail").innerHTML = email;
+            document.getElementById("opmobile").innerHTML = contact;
+        }
+    </script>
+</head>
+<body>
+    <p>name
+      <input type="text" id="txtname">
+    </p>
+    <p>email id
+       <input type="email" id="txtemail">
+    </p>
+    <p>contact
+      <input type="tel" id="txtmobile">
+    </p>
+    
+    <button type="button" onclick="one();">submit</button>
+
+    <h1 id="opname"></h1>
+    <p id="opemail"></p>
+    <table border="1">
+        <tr>
+            <th id="opmobile"></th>
+        </tr>
+    </table>
+
+</body>
+</html>

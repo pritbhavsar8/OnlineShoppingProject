@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login.html</title>
+    <script>
+        function one()
+       {
+          var email = document.getElementById("textemail").value;
+          var password = document.getElementById("textpassword").value;
+        
+          if(email=="test@gmail.com" && password=="123")
+         {
+            localStorage.setItem("islogin","yes");
+            window.location="dashboard.html";
+         }
+          else 
+         {
+            document.getElementById("p1").innerHTML= "Not Found";
+         }
+
+       } 
+
+     
+
+
+    </script>
+</head>
+<body>
+    <p>email id =
+        <input type="text" id="textemail">
+    </p>
+    <p>password =
+        <input type="text" id="textpassword">
+    </p>
+    <p id="p1"></p>    
+    <button type="button" onclick="one()" >sign in</button>
+    
+    
+</body>
+</html>

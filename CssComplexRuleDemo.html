@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css complexrule</title>
+    <style>
+        .row
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        .col-12
+        {
+            width: 100%;
+            float: left;
+        }
+        .col-11
+        {
+            width: 91.66%;
+            float: left;
+        }
+        .col-10
+        {
+            width: 83.33%;
+            float: left;
+        }
+        .col-9
+        {
+            width: 75%;
+            float: left;
+        }
+        .col-8
+        {
+            width: 66.66%;
+            float: left;
+        }
+        .col-7
+        {
+            width:58.33%;
+            float: left;
+        }
+        .col-6
+        {
+            width:50%;
+            float: left;
+        }
+        .col-5
+        {
+            width:41.66%;
+            float: left;
+        }
+        .col-4
+        {
+            width:33.33%;
+            float: left;
+        }
+        .col-3
+        {
+            width:25%;
+            float: left;
+            
+        }
+        .col-2
+        {
+            width:16.66%;
+            float: left;
+        }
+        .col-1
+        {
+            width:8.33%;
+            float: left;
+        }
+        .center
+        {
+            text-align: center;
+        } 
+        input[type=button]
+        {
+            width: 120px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 50px;
+            margin-top: 5px;
+        } 
+        button[type=button]
+        {
+            width: 400px;
+            height: 40px;
+            border-radius: 50px;
+            border: 1px solid;
+
+        }
+        .img1
+        {
+           
+            height: 25px;
+            width: 25px;
+            border-radius: 25px;
+            padding-top: 2px;
+            padding-left: 350px;
+            
+            
+          
+           
+        }
+        header
+        {
+            background-color:#e2b4b4;
+           
+        }
+        .middle
+        {
+            display: flex;
+            justify-content: center;
+            text-align: right;
+            margin: 9px;
+            
+        }
+        .img2
+        {
+            border: 1px solid;
+            height: 30px;
+            width: 30px;
+            border-radius: 35px;
+            
+        }
+        .img3
+        {
+            border: 1px solid;
+            height: 30px;
+            width: 30px;
+            border-radius: 35px;
+        }
+        .img3:hover
+        {
+            background-color: #9e9e9e ;
+            color: #eae3e3;
+        }
+
+        
+        .img4
+        {
+            border: 1px solid;
+            height: 30px;
+            width: 30px;
+            border-radius: 35px;
+        }
+        .img4:hover
+        {
+            background-color: #9e9e9e ;
+            color: #eae3e3;
+        }
+        .img5
+        {
+            border: 1px solid;
+            height: 30px;
+            width: 30px;
+            border-radius: 30px;
+        }
+        .img5:hover
+        {
+            background-color: #9e9e9e ;
+            color: #eae3e3;
+        }
+        button[class=b2]
+        {
+            width: 120px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 50px
+        }
+        button[class=b2]:hover
+        {
+            background-color: #9e9e9e ;
+            color: #eae3e3;
+        }
+    
+        button[class=b3]
+        {
+            width: 120px;
+            height: 40px;
+            border: 1px solid;
+            border-radius: 50px    
+        }
+        button[class=b3]:hover
+        {
+            background-color: #9e9e9e ;
+            color: #eae3e3;
+
+        }
+    
+        .gap-20
+        {
+            margin-top: 20px;
+        }
+        body
+        {
+            background-color:#ffccbc ;
+        }
+        textarea
+        {
+            margin-top: 20px;
+            border-radius:20px ;
+            border: 1px solid;
+        }
+        textarea:hover
+        {
+            background-color: #bcb4b4 ;
+            color: #eae3e3;
+        }
+       
+      
+    
+      
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="row">
+            <div class="col-3 center">
+                <img src="img/menu.webp" height="60px" width="57px">
+                <img src="img/youtube.webp" height="60px" width="130px">
+            </div>
+            <div class="col-6 center">
+                <div class="middle">
+                    <button type="button"> 
+                      <img class=img1 src="img/voice.webp">
+                    </button>
+                </div>    
+            </div>
+            <div class="col-3 center">
+                <div class="middle">
+                    <img src="img/menu1.webp" height="60px" width="50px">
+                    <input type="button" value="signin" >
+                </div>
+            </div>   
+        </div>
+    </header>
+    <!-- header -->
+
+    <!-- body -->
+    <div class="body">
+        <div class="row">
+            <div class="col-7 gap-20">
+                <iframe width="700" height="360" src="https://www.youtube.com/embed/Tku0BtmC8a4?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="row">
+                    <!-- channel logo -->
+                    <div class="col-1 center gap-20">
+                        <img class="img2" src="img/channels4profile.jpg">
+                    </div>
+                    <!-- channel name -->
+                    <div class="col-3 center gap-20">
+                        <span><b>Hopesky Status</b></span><br>
+                        <small><span>1.87k subscriber</span></small>
+                    </div>
+                    <!-- subscriber -->
+                    <div class="col-2 center gap-20">
+                        <button class=b2 type="button">Subscribe</button>
+                    </div>
+                    <!-- like -->
+                    <div class="col-1 center gap-20">
+                        <img class=img3 src="img/like.png">
+                    </div>
+                    <!-- dislike -->
+                    <div class="col-1 center gap-20">
+                        <img class="img4" src="img/Dislike.webp">
+                    </div>
+                    <!-- share -->
+                    <div class="col-3 center gap-20">
+                        <button class="b3" type="button">Share</button>
+                    </div>
+                    <!-- menu -->
+                    <div class="col-1 center gap-20">
+                        <img class=img5 src="img/menu_horizontal.webp"> 
+                    </div>
+                    <div class="col-12">
+                        <textarea rows="4" col="225"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 gap-20">
+                <div class="row">
+                    <!-- video 1 -->
+                    <div class="col-8">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/jC9CH4yOmHg?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-4">
+                        <span>168,711 views  Dec 3, 2022
+                            Om namo hiranya behave
+                            ॐ  नमो  हिरण्यबाहवे  </span>
+                    </div>
+                    <!-- video 2 -->
+
+                    <div class="col-8">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/kQxyjfYA94w?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-4">
+                        <span>402,773 views  Feb 15, 2023
+                            रावण रचित शिव तांडव स्तोत्रम् | With Original Lyrics </span>
+                    </div>
+                    <!-- video 3 -->
+
+                    <div class="col-8">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/PcUl4WzTkP8?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-4">
+                        <span>427,824 views  Jan 12, 2023  #narci #ramdarshan #patanahikisroopmeaakar
+                            #like #share #subscribe #ramdarshan #narci #patanahikisroopmeaakar
+                            </span>
+                    </div>
+                    <!-- video 4 -->
+                    <div class="col-8">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/eymsQ6DdYEs?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-4">
+                        <p>1,339,190 views  Jul 9, 2018
+                            Shiva Suvarnamala Stuti(SHIVA SONG) by G Gayathri Devi S. Saindhavi
+                            </p>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+    
+</body>
+</html>

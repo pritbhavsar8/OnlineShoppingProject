@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Example</title>
+    <style>
+        .heading
+        {
+            color:red;
+            background-color: aquamarine;
+            font-size: 100px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. Internal
+        2. External
+     -->
+     <p id="result">This is <b>Bold</b></p>
+     <input type="text" id="txtname"/>
+     <button type="button" id="btn">Submit</button>
+
+
+     <h1 class="heading">Heading</h1>
+
+     <script src="js/jquery-3.6.4.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            
+
+            $("#btn").click(function(){
+
+               // $("h1").toggleClass("heading");
+
+               // $("h1").css("color","red").css("font-size","100px");
+
+
+
+                // var name = document.getElementById("textname").value;
+                 // var name = $("#txtname").val();
+                 // alert("Welcome:"+name);
+              //  $("#result").html()
+//
+              // var res = $("#result").html();
+               //  alert(res);
+               // $("#result").html(res);
+            });
+
+
+        });
+     </script>
+</body>
+</html>

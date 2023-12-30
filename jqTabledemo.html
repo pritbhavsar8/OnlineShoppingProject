@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result">
+
+    </div>
+    <span> Name:
+        <input type="text" id="txtname">
+    </span>   
+    <span> Quantity:
+        <input type="text" id="txtqty">
+    </span>    
+    <span> Price:
+        <input type="text" id="txtprice">
+    </span>
+
+    <button type="button" id="btnadd">+</button>
+</br>
+</br>
+
+    <table border="2" cellpadding="15" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>quantity</th>
+                <th>price</th>
+                <th>total</th>
+                <th colspan="2">action</th>
+            </tr>
+        </thead>
+        <tbody id="bill">
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total</th>
+                <th id="finaltotal">0</th>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            var finaltotal=0;
+
+            
+
+            $("#btnadd").click(function(){
+               
+                var name = $("#txtname").val();
+                var qty = $("#txtqty").val();
+                var price = $("#txtprice").val();
+                var total = parseInt(qty) * parseInt(price);
+
+                finaltotal= finaltotal + total;
+
+                $("#finaltotal").html(finaltotal);
+
+
+                var  op = "";
+
+                op += "<tr>";
+                op+= "<td>"+name+"</td>";
+                op+= "<td>"+qty+"</td>";
+                op+= "<td>"+price+"</td>";
+                op+= "<td>"+total+"</td>";
+                op+= "<td><button type='button' class='btn-copy'>copy</button></td>";
+                op+= "<td><button type='button' class='btn-delete'>Delete</button></td>";
+                op += "</tr>";
+
+                $("#bill").append(op);
+               
+                
+            });
+
+            $(document).on("click",".btn-delete",function(){
+                var tr = $(this).closest("tr");
+                var amt = tr.find("td:eq(3)").text();
+                finaltotal= finaltotal - amt;
+                $("#finaltotal").html(finaltotal);
+                tr.remove();
+
+            });    
+                
+                $(document).on("click",".btn-copy",function(){
+
+                    var tr = $(this).closest("tr");
+                    var Name = tr.find("td:eq(0)").text();
+                    $("#txtname").val(Name);
+                    var quantity = tr.find("td:eq(1)").text();
+                    $("#txtqty").val(quantity);
+                    var Price = tr.find("td:eq(2)").text();
+                    $("#txtprice").val(Price);
+                })
+           
+        })
+    </script>
+
+</body>
+</html>

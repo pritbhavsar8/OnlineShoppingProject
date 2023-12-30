@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img/guj.png" height="150" width="250"><br>
+
+    <button type="button" id="btn1">click1</button>
+    <button type="button" id="btn2">click2</button>
+    <button type="button" id="btn3">click3</button>
+    <button type="button" id="btn4">click4</button>
+    <button type="button" id="btn5">click5</button>
+    
+
+    
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btn1").click(function(){
+                $("img").attr("src", "img/india.png")
+
+                $("#btn2").click(function(){
+                    $("img").attr("src", "img/layout.png")
+                })
+
+                $("#btn3").click(function(){
+                    $("img").attr("src", "img/passport.jpg")
+                    
+                })
+
+                $("#btn4").click(function(){
+                    $("img").attr("src", "img/p1.jpg")
+                })
+
+                $("#btn5").click(function(){
+                    $("img").attr("src", "img/p2.jpg")
+                })
+
+
+               
+            });
+        });
+    </script>
+</body>
+</html>

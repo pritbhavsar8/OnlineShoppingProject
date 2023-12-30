@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 12 Rule</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .row
+        {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-12
+        {
+            width: 100%;
+            float: left;
+        }
+        .col-11
+        {
+            width: 91.66%;
+            float: left;
+        }
+        .col-10
+        {
+            width: 83.33%;
+            float: left;
+        }
+        .col-9
+        {
+            width: 75%;
+            float: left;
+        }
+        .col-8
+        {
+            width: 66.66%;
+            float: left;
+        }
+        .col-7
+        {
+            width:58.33%;
+            float: left;
+        }
+        .col-6
+        {
+            width:50%;
+            float: left;
+        }
+        .col-5
+        {
+            width:41.66%;
+            float: left;
+        }
+        .col-4
+        {
+            width:33.33%;
+            float: left;
+        }
+        .col-3
+        {
+            width:25%;
+            float: left;
+        }
+        .col-2
+        {
+            width:16.66%;
+            float: left;
+        }
+        .col-1
+        {
+            width:8.33%;
+            float: left;
+        }
+        body
+        {
+            background-color:darkgray;
+        }
+        ul.menu
+        {
+            text-align: center;
+        }
+        ul.menu li
+        {
+            display: inline-block;
+        }
+        ul.menu li a
+        {
+            padding: 10px;
+            text-decoration: none;
+            color: #006064;
+            font-size: 22px;
+        }
+        ul.menu li a:hover
+        {
+            color: #e0f7fa;
+            background-color: #006064;
+        }
+        .center
+        {
+            text-align: center;
+        }
+        .gap-20
+        {
+            margin-top: 20px;
+        }
+        .gap-10
+        {
+            margin-top: 10px;
+        }
+        .service-image
+        {
+            border-radius: 10px;
+        }
+        .about-text
+        {
+            background-color: coral;
+            color: gold;
+        }
+        ul.link li a
+        {
+            text-decoration: underline;
+            font-size: 20px;
+            padding: 12px;
+            color: rgb(225, 111, 11);
+           
+        }
+        ul.link li
+        {
+            list-style-type: none;
+        }
+        address
+        {
+            text-align: left;
+            margin: 5px 100px 25px 50px;
+        }
+        iframe
+        {
+            margin:25px 100px 2px 100px ;
+        }
+    
+    
+      
+    </style>
+</head>
+<body>
+
+    <!-- LOGO/MENU -->
+    <header>
+        <div class="row">
+            <div class="col-2 center">
+                <img src="img/p1.jpg" width="100"/>
+            </div>
+            <div class="col-10" data-aos="flip-left" data-aos-duration="3000">
+                <ul class="menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- LOGO/MENU -->
+
+    <!-- SLIDER -->
+    <div class="hero">
+        <div class="row">
+            <div class="col-12 center gap-20">
+                <img src="https://picsum.photos/900/400"/>
+            </div>
+        </div>
+    </div>
+    <!-- SLIDER -->
+
+    <!-- SERVICES -->
+    <div class="services">
+        <div class="row">
+            <div class="col-4 center gap-10">
+                <img class="service-image" src="https://picsum.photos/200/200"/>
+                <h2 class="service-heading">Web Development</h2>
+                <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis odit, maxime pariatur nisi labore rem nesciunt unde eveniet incidunt et consequuntur earum quod provident voluptatum ad? Accusantium, voluptatum. Ducimus, laudantium.</p>
+            </div>
+            <div class="col-4 center gap-10">
+                <img class="service-image" src="https://picsum.photos/200/200"/>
+                <h2 class="service-heading">Web Development</h2>
+                <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis odit, maxime pariatur nisi labore rem nesciunt unde eveniet incidunt et consequuntur earum quod provident voluptatum ad? Accusantium, voluptatum. Ducimus, laudantium.</p>
+            </div>
+            <div class="col-4 center gap-10">
+                <img class="service-image" src="https://picsum.photos/200/200"/>
+                <h2 class="service-heading">Web Development</h2>
+                <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis odit, maxime pariatur nisi labore rem nesciunt unde eveniet incidunt et consequuntur earum quod provident voluptatum ad? Accusantium, voluptatum. Ducimus, laudantium.</p>
+            </div>
+            <div class="col-4 center gap-10">
+                <img class="service-image" src="https://picsum.photos/200/200"/>
+                <h2 class="service-heading">Web Development</h2>
+                <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis odit, maxime pariatur nisi labore rem nesciunt unde eveniet incidunt et consequuntur earum quod provident voluptatum ad? Accusantium, voluptatum. Ducimus, laudantium.</p>
+            </div>
+            <div class="col-4 center gap-10">
+                <img class="service-image" src="https://picsum.photos/200/200"/>
+                <h2 class="service-heading">Web Development</h2>
+                <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis odit, maxime pariatur nisi labore rem nesciunt unde eveniet incidunt et consequuntur earum quod provident voluptatum ad? Accusantium, voluptatum. Ducimus, laudantium.</p>
+            </div>
+            <div class="col-4 center gap-10">
+                <img class="service-image" src="https://picsum.photos/200/200"/>
+                <h2 class="service-heading">Web Development</h2>
+                <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis odit, maxime pariatur nisi labore rem nesciunt unde eveniet incidunt et consequuntur earum quod provident voluptatum ad? Accusantium, voluptatum. Ducimus, laudantium.</p>
+            </div>
+        </div>
+    </div>
+    <!-- SERVICES -->
+
+    <!-- ABOUT -->
+    <div class="about">
+        <div class="row">
+            <div class="col-6 center">
+                <img class="about-img1" src="img/india.png" height="300" width="300">
+            </div>
+            <div class="col-6">
+                <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident nobis aperiam repudiandae soluta, omnis quos! Et totam eius aperiam pariatur aliquid quia vel, ducimus, sunt omnis qui id, enim harum.</p>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est iste corporis? Aut beatae aliquid magni veniam cupiditate natus incidunt voluptate quidem, quam quo, sint facere non expedita numquam quaerat?</p>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur qui dignissimos porro facere adipisci explicabo at vero nostrum unde ratione ea nemo labore culpa doloremque dolorum, in, molestiae distinctio.</p>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur qui dignissimos porro facere adipisci explicabo at vero nostrum unde ratione ea nemo labore culpa doloremque dolorum, in, molestiae distinctio.</p>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT -->
+
+    <!-- VIDEO -->
+    <div class="video">
+        <div class="row">
+            <div class="col-12 center gap-20">
+              <video width="320" height="240" loop muted autoplay>
+                <source src="video/movie.mp4" type="video/mp4">
+              </video>
+            </div>
+        </div>
+    </div>
+    <!-- VIDEO -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="row">
+            <div class="col-3">
+                <ul class="link">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <ul class="link">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.9911939955055!2d72.83445804946173!3d21.232197785819267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d912d307999%3A0x3b18017175bd4594!2sKaron%20IT%20Training!5e0!3m2!1sen!2sin!4v1676928782064!5m2!1sen!2sin" width="60" height="45" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <address>
+                    509,keron IT institute<br>
+                    laxmi enclave 2<br>
+                    near gajera school<br>
+                    surat
+                </address>
+            </div>
+            <div class="col-12 center">
+                <img src="img/social-icons.jpg" height="70px" width="550px">
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>

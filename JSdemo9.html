@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var op="";
+        function one()
+    {    
+
+          var number = document.getElementById("num").value;
+          
+          var i=1;
+    
+        while(i<=number)
+        {
+            if(i%2==1)
+            {
+                op=op+i+"<br>"
+            }
+            i++;
+        }
+        document.getElementById("p1").innerHTML=op;
+    }
+    function reverse()
+    {
+
+       var number = document.getElementById("num").value;
+        
+       var i=number
+
+        while(i>=1)
+        {
+            if(i%2==1)
+            {
+                op=op+i+"<br>"
+            }
+            i--;
+        }
+        document.getElementById("p1").innerHTML=op;
+    }
+    </script>
+</head>
+<body>
+    <p>Number=
+        <input type="text" id="num">
+    </p>
+    <input type="button" value="button" onclick="one()">
+    <input type="button" value="reverse" onclick="reverse()">
+    <p id="p1"></p>
+
+
+</body>
+</html>

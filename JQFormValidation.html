@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error
+        {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" id="form1">
+        <p>Name:
+            <input type="text" name="textname">
+        </p>
+        
+        <p>Contact:
+            <input type="tel" name="textcontact">
+        </p>
+    
+        <p>Email id:
+            <input type="text" name="textemail">
+        </p>
+    
+        <p>Password:
+            <input type="text" name="textpassword">
+        </p>
+        <p>Age:
+            <input type="text" name="textage">
+        </p>
+    
+        <button type="submit">submit</button>
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#form1").validate({
+                rules:
+                {
+                    textname:
+                    {
+                        required:true
+                    },
+                    textcontact:
+                    {
+                        required:true,
+                        number:true,
+                        minlength:10,
+                        maxlength:10
+                    },
+                    textemail:
+                    {
+                        required:true,
+                        email:true
+                    },
+                    textpassword:
+                    {
+                        required:true,
+                        minlength:8,
+                    },
+                    textage:
+                    {
+                        required:true,
+                        number:true,
+                        min:18
+                    }
+                },
+                messages:
+                {
+                    textname:
+                    {
+                        required:"Please Enter Name"
+                    },
+                    textcontact:
+                    {
+                        required:"Please Enter Mobile Number",
+                        number:"Only digits alloed",
+                        minlength:"Not a valid mobile number",
+                        maxlength:"Not a valid mobile number",
+                    },
+                }
+            });
+        });
+    </script>
+</body>
+</html>

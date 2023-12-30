@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie</title>
+    <script>
+       const setCookie = (name, value, days = 7, path = '/') => {
+        const expires = new Date(Date.now() + days * 864e5).toUTCString()
+        document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=' + path
+        }
+
+        const getCookie = (name) => {
+        return document.cookie.split('; ').reduce((r, v) => {
+            const parts = v.split('=')
+            return parts[0] === name ? decodeURIComponent(parts[1]) : r
+        }, '')
+        }
+
+        const deleteCookie = (name, path) => {
+        setCookie(name, '', -1, path)
+        }
+        function addData()
+        {
+            var name = document.getElementById("textname").value;
+            setCookie("firstname",name,5);
+            alert("Cookie Created");
+        }
+      
+        function readData()
+        {
+            var s = getCookie("firstname");
+            if(s)
+            {
+                alert(s);
+            }
+        }
+        function removeData()
+        {
+            deleteCookie("firstname");
+            alert("Cookie Deleted");
+        } 
+
+        
+    </script>
+</head>
+<body>
+   <p>name:
+      <input type="text" id="textname">
+   </p> 
+   <button type="button" onclick="addData();">Add</button>
+   <button type="button" onclick="readData();">Read</button>
+   <button type="button" onclick="removeData();">Remove</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@font-face {
+    font-family: 'TiltPrism-Regular';
+    src: url('../fonts/TiltPrism-Regular.ttf');
+}
+body
+{
+    background-color: white;
+}
+
+h1
+{
+    font-family: 'Shantell Sans', cursive;
+}
+.c1
+{
+    font-family: 'Climate Crisis', cursive;
+}
+p
+{
+    font-family: 'TiltPrism-Regular';
+    font-size: 50px;
+    font-weight: lighter;
+    font-variant: small-caps;
+}
+.icon
+{
+    color:red;
+    font-size: 500px;
+}
+/* Home */
+
+
+/* About */

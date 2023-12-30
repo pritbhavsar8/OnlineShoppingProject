@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        input[type=button]
+        
+        {
+            width: 300px;
+            height: 70px;
+            border: 1px solid;
+            border-radius: 15px;  
+        }
+        input[type=button]:hover
+        {
+            background-color: yellow;
+            color:black
+        }
+        #img1
+        {
+           border-radius: 70%;
+        }
+        #img2
+        {
+            filter: grayscale(100%);
+        }
+        #img2:hover
+        {
+            filter: brightness(70%);
+        }
+        #img3:hover
+        {
+            transform: rotate(180deg);
+        }
+        #img4:hover
+        {
+            border-top-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+           
+        }
+        div{
+            width: 150px;
+            height:150;
+            background-color: aqua;
+            animation-name: squre;
+            animation-duration: 10s;
+            animation-iteration-count: 7;
+        }
+        .img5
+        {
+            animation: MoveUpDown 3s linear infinite;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        @keyframes MoveUpDown {
+        0%, 100% {
+            bottom: 0;
+        }
+        50% {
+            bottom: 100px;
+        }
+        }
+        p::first-line
+        {
+            text-decoration: underline;
+        }
+        .p1
+        {
+            color: ;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <form>
+        <input type="button" value="sign in">
+    </form>
+    <br>
+    <br>
+    <img id="img1" src="img/india.png" alt="india photo" width="359" height="300"/><br>
+    <img id="img2" src="img/universe.png" alt="universe photo" width="359" height="300"/><br>
+    <img id="img3" src="img/layout.png" alt="layout photo" width="359" height="300"/><br>
+    <img id="img4" src="img/p1.jpg" alt="layout photo" width="359" height="300"/><br>
+
+    <br/>
+    <br/>
+    <img class="img5" src="img/p1.jpg" alt="layout photo" width="359" height="300"/>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex hic voluptates doloremque quae voluptatem! Assumenda aliquid unde ratione est sit odit numquam distinctio, nam mollitia alias necessitatibus esse laudantium expedita!</p>
+   <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, perspiciatis magni sit qui laboriosam neque odit nulla facere deleniti expedita voluptate sapiente! Quas, corrupti adipisci. Reiciendis tenetur aut tempora inventore.</p>
+</body>
+</html>

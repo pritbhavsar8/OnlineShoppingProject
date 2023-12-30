@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+    <script>
+        //two method of find count in string
+       // 1: by loop
+       // 2: by match method
+        function string()
+        {
+             var str = "apple is red aaaaaa";
+            // var count = str.match(/a/g);
+
+           var count=0;
+           var len = str.length;
+           for(var i=1;i<len;i++)
+           {
+            alert(str[i]);
+
+            //   if(str[i]=="a")
+            //   {
+            //    count++; 
+        
+            //   }
+           }
+            document.getElementById("p1").innerHTML = count
+            //   document.getElementById("p1").innerHTML = count.length
+
+
+        }
+    </script>
+    
+</head>
+<body>
+    <button type="button" onclick="string()">count</button>
+    <p id="p1"></p>
+</body>
+</html>

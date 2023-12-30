@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function one()
+    {
+  
+      var a = [1,9,8,7,11,12,13]
+      var b = []
+      var c = []
+      var len = a.length
+      
+
+      for(var i=0;i<=len;i++)
+      {
+        
+         if(a[i]%2 == 0)
+        {
+          b.push(a[i]);
+        }
+
+        else if(a[i]%2 == 1)
+        {
+          c.push(a[i]);
+        }
+      
+      }
+        var evenstr = b.join("|");
+        var oddstr = c.join("|");
+        document.getElementById("p1").innerHTML = oddstr;
+        document.getElementById("p2").innerHTML = evenstr;
+
+    }
+      </script> 
+<body>
+    <button type="button" onclick="one();">enter</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+</html>

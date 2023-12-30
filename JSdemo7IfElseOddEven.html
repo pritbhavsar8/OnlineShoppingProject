@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else</title>
+    <script>
+        function one()
+        {
+            var number = document.getElementById("num").value;
+            
+            
+            if(number%2==0)
+            {
+                
+                document.getElementById("cat").innerHTML="even";
+            }
+           else
+            {
+                document.getElementById("cat").innerHTML="odd";
+            }
+
+         
+
+        }
+    </script>
+</head>
+<body>
+    <p>Number=
+        <input type="text" id="num">
+    </p>
+    <input type="button" value="button" onclick="one()">
+
+
+    <table>
+        <tr>   
+           <th>Catagory:</th>
+           <td id="cat"></td>
+        </tr>   
+    </table>
+</body>
+</html>

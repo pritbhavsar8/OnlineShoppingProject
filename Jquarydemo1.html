@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo1</title>
+</head>
+<body>
+    <p>Roll No=
+        <input type="text" id="rolno">
+    </p>
+    <p>Name=
+        <input type="text" id="name">
+    </p>
+    <p>Sub 1=
+        <input type="text" id="subject1">
+    </p>
+    <p>Sub 2=
+        <input type="text" id="subject2">
+    </p>
+    <p>Sub 3=
+        <input type="text" id="subject3">
+    </p>
+    <button type="button" id="btn">result</button>
+
+    <table border="1" cellpadding="17"> 
+        <tr>
+            <th>Roll No</th>
+            <td id="RN" ></td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td id="NAME"></td>
+        </tr>
+        <tr>
+            <th>Sub 1</th>
+            <td id="SUB1"></td>
+        </tr>
+        <tr>
+            <th>Sub 2</th>
+            <td id="SUB2"></td>
+        </tr>
+        <tr>
+            <th>Sub 3</th>
+            <td id="SUB3"></td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td id="TOTAL"></td>
+        </tr>
+        <tr>
+            <th>Percentage</th>
+            <td id="PER"></td>
+        </tr>
+        <tr>
+            <th>class</th>
+            <td id="CLS"></td>
+        </tr>
+    </table>
+
+
+    
+
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+       $(document).ready(function(){
+        $("#btn").click(function(){
+
+            var rollno = $("#rolno").val();
+            var nam    =  $("#name").val();
+            var sbj1   = $("#subject1").val();
+            var sbj2   = $("#subject2").val();
+            var sbj3   = $("#subject3").val();
+            var total  = parseInt(sbj1)+parseInt(sbj2)+parseInt(sbj3);
+            var percentage = parseInt(total)/3;
+
+            if(percentage >= 70)
+            {
+                $("#CLS").html("distriction"); 
+            }
+
+          
+
+            $("#RN").html(rollno)
+            $("#NAME").html(nam);
+            $ ("#SUB1").html(sbj1);
+            $ ("#SUB2").html(sbj2);
+            $("#SUB3").html(sbj3);
+            $("#TOTAL").html(total);
+            $("#PER").html(percentage);
+            })
+       })
+
+
+
+
+
+     </script>   
+</body>
+</html>
